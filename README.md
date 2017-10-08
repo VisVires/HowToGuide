@@ -1,6 +1,6 @@
 # HowToGuide [![Build Status](https://secure.travis-ci.org/CS290/HowToGuide.png?branch=master)](http://travis-ci.org/CS290/HowToGuide)
 
-The best project ever.
+This project is a How To Guide written for a class on NodeJS and it's purpose is to show how to use NodeJS to use Google Analytics on the backend.
 
 ## Getting Started
 Install the module with: `npm install HowToGuide`
