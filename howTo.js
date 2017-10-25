@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 //get google apis
 var google = require('googleapis');
 //get key info
-var key = require('VisVires-fba55597adbe.json');
-var uaKey = require('universalAnalytics.json');
+var key = 'AIzaSyB8dbWBGMAIKaGuF3lQM7z-fqk4GgPbMZ8';
+var uaKey = require('universal-analytics.json');
 //view id
 const VIEW_ID = 'ga:112638844';
 app.use(ua.middleware(uaKey.tid));
@@ -17,11 +17,11 @@ app.use(ua.middleware(uaKey.tid));
 
 var vistor = ua(uaKey.tid,{https:true}).debug();
 
-vistor.pageview("/","https://52.33.123.15:3000").pageview("/core", "https://52.33.123.15:3000", function(err){
-    if(!err){
-        console.log(arguments);
-    }
-});
+//vistor.pageview("/","https://52.33.123.15:3000").pageview("/core", "https://52.33.123.15:3000", function(err){
+//    if(!err){
+//        console.log(arguments);
+//    }
+//});
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
