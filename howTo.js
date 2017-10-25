@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var google = require('googleapis');
 //get key info
 var key = 'AIzaSyB8dbWBGMAIKaGuF3lQM7z-fqk4GgPbMZ8';
-var uaKey = require('universal-analytics.json');
+var uaKey = require('universal-analytics');
 //view id
 const VIEW_ID = 'ga:112638844';
 app.use(ua.middleware(uaKey.tid));
